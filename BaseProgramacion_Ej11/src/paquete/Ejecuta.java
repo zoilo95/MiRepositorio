@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Ejecuta {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		   /*
 		    11. Programa que lee nombre y año de nacimiento de una serie de alumnos hasta introducir
@@ -25,13 +24,11 @@ public class Ejecuta {
 		float media;
 		int menor = Integer.MAX_VALUE;
 		boolean continuar = true;
-		Calendar calendario;
 		Scanner sc;
+		int anyoActual = Calendar.getInstance().get(Calendar.YEAR);
 		
 		sc = new Scanner(System.in);
-		calendario = Calendar.getInstance();
 		
-		int anyoActual = Calendar.getInstance().get(Calendar.YEAR);
 		
 		do {
 			
@@ -62,6 +59,8 @@ public class Ejecuta {
 			media = (float)suma/contEdad;
 			System.out.println("El más joven se llama " + nombreMenor + " y la media es " + media);
 		}
+		
+		sc.close();
 		
 	}
 
