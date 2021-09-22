@@ -53,13 +53,8 @@ public class Ejecuta {
 					nombreMenor = nombre;
 				}
 			}
-			
-			
-				
-			
+
 		}while(continuar==true);
-		
-		
 		
 		System.out.println("Fin");
 		
@@ -67,8 +62,6 @@ public class Ejecuta {
 			media = (float)suma/contEdad;
 			System.out.println("El más joven se llama " + nombreMenor + " y la media es " + media);
 		}
-		
-		
 		
 	}
 
