@@ -21,12 +21,24 @@ public class Ejecuta {
 		System.out.println("Introduzca número");
 		numero = sc.nextInt();
 		
-		for(int candidatoDivisor=2; candidatoDivisor<numero && esPrimo==true; candidatoDivisor++) {
-			resto = numero%candidatoDivisor;
-			if(resto==0) {
-				esPrimo = false;
+		if(numero<2) {
+			esPrimo = false;
+		}else {
+			for(int candidatoDivisor=2; candidatoDivisor<numero && esPrimo==true; candidatoDivisor++) {
+				resto = numero%candidatoDivisor;
+				if(resto==0) {
+					esPrimo = false;
+				}
 			}
 		}
+		
+		if(esPrimo) {
+			System.out.println("Es primo");
+		}else {
+			System.out.println("No es primo");
+		}
+		
+		sc.close();
 		
 	}
 
