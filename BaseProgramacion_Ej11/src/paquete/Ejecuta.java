@@ -8,10 +8,10 @@ public class Ejecuta {
 	public static void main(String[] args) {
 		
 		   /*
-		    11. Programa que lee nombre y aÒo de nacimiento de una serie de alumnos hasta introducir
-			como nombre de alumno ìfinî. En ese momento mostrar· la edad media de los alumnos y
-			el nombre del alumno menor. NOTA: Al introducir como nombre ìfinî, no nos ha de pedir el
-			aÒo de nacimiento.
+		    11. Programa que lee nombre y a√±o de nacimiento de una serie de alumnos hasta introducir
+			como nombre de alumno ‚Äúfin‚Äù. En ese momento mostrar√° la edad media de los alumnos y
+			el nombre del alumno menor. NOTA: Al introducir como nombre ‚Äúfin‚Äù, no nos ha de pedir el
+			a√±o de nacimiento.
 		    */
 		
 		
@@ -38,7 +38,7 @@ public class Ejecuta {
 			if(nombre.equals("fin")) {
 				continuar = false;
 			}else {
-				System.out.println("Introduzca aÒo de nacimiento:");
+				System.out.println("Introduzca a√±o de nacimiento:");
 				anyoNacimiento = Integer.valueOf(sc.nextLine());
 				
 				edad = anyoActual-anyoNacimiento;
@@ -57,11 +57,11 @@ public class Ejecuta {
 		
 		if(contEdad>0) {
 			media = (float)suma/contEdad;
-			System.out.println("El m·s joven se llama " + nombreMenor + " y la media es " + media);
+			System.out.println("El m√°s joven se llama " + nombreMenor + " y la media es " + media);
 		}
 		
 		sc.close();
-		// eclipse
+		// conflicto para pull
 	}
 
 }
